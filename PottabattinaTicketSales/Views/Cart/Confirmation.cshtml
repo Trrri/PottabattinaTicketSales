@@ -1,0 +1,40 @@
+﻿@*
+    Created by Triveni Pottabattina
+    15 15 15 15 15 15 15 15 15 15 15
+*@
+@model BuyTickets
+<h2>Ticket Purchase Confirmation</h2>
+<table>
+    <tr>
+        <td class="text-dark">Order date: </td>
+        <td>@Model.SaleDate</td>
+    </tr>
+    <tr>
+        <td class="text-dark">Event: </td>
+        <td>@Model.EventName</td>
+    </tr>
+    <tr>
+        <td class="text-drak">Ticket Price: </td>
+        <td>@Model.TicketPrice</td>
+    </tr>
+    <tr>
+        <td class="text-dark">Number of Tickets</td>
+        <td>@Model.NumberOfTickets</td>
+    </tr>
+    <tr>
+        <td class="text-dark">Sub Total: </td>
+        <td>@Model.SubTotal.ToString("C2")</td>
+    </tr>
+    <tr>
+        <td class="text-dark">Discount Amount: </td>
+        <td>@Model.SaleDiscount.ToString("C2")</td>
+    </tr>
+    <tr>
+        <td class="text-drak">Delivery Fees: </td>
+        <td>@Model.DeliveryCharge.ToString("C2")</td>
+    </tr>
+    <tr>
+        <td class="text-drak">Amount Due: </td>
+        <td>@Model.AmountDue.ToString("C2")</td>
+    </tr>
+</table>
